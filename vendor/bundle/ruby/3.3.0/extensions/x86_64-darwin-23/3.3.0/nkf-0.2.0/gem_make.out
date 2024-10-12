@@ -1,0 +1,18 @@
+current directory: /Users/raymond/Documents/interview/Etiqa/GithubRepoDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+/usr/local/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/raymond/Documents/interview/Etiqa/GithubRepoDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20241010-5972-q2uc8d sitelibdir\=./.gem.20241010-5972-q2uc8d clean
+
+current directory: /Users/raymond/Documents/interview/Etiqa/GithubRepoDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20241010-5972-q2uc8d sitelibdir\=./.gem.20241010-5972-q2uc8d
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Users/raymond/Documents/interview/Etiqa/GithubRepoDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20241010-5972-q2uc8d sitelibdir\=./.gem.20241010-5972-q2uc8d install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20241010-5972-q2uc8d
+
+current directory: /Users/raymond/Documents/interview/Etiqa/GithubRepoDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20241010-5972-q2uc8d sitelibdir\=./.gem.20241010-5972-q2uc8d clean
