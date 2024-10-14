@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { StyleSheet, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView, Alert } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamsList } from 'features/navigation/Navigator';
 import { GithubRepoFlatList } from 'features/home/components/GithubRepoFlatList';
@@ -10,14 +10,19 @@ interface Props {
 }
 
 const Home = ({ navigation }: Props) => {
-	const {
-		fetchGithubRepoList,
-		isFetching,
-		githubRepoList,
-	} = useGithubRepoGetList();
+	const { fetchGithubRepoList, isFetching, githubRepoList } =
+		useGithubRepoGetList();
 
 	useEffect(() => {
-		fetchGithubRepoList(1);
+		const fetchInitialGithubRepoList = async () => {
+			try {
+				await fetchGithubRepoList(1);
+			} catch (error) {
+				Alert.alert('Error: ', error);
+			}
+		};
+
+		fetchInitialGithubRepoList();
 	}, []);
 
 	return (
